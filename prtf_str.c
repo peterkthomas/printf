@@ -23,8 +23,8 @@ int prtf_str(va_list data)
 	{
 		length += _putchar(str[i]);
 	}
-	
+
 	va_end(data);
 
-	return(length);
+	return (length);
 }

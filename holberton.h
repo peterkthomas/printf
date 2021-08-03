@@ -5,10 +5,11 @@
 #include <stdlib.h>
 
 /**
- * struct options - structure
+ * struct print_format - structure
  * @format:  pointer to format
  * @p: pointer to va_list item
  */
+
 struct print_format
 {
 	char *format;

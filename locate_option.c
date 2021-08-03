@@ -13,7 +13,7 @@ int locate_option(va_list args, const char *format, int cursor)
 {
 	int i;
 	char option;
-	
+
 	pf settings[] = {
 		{"%", prtf_pct},
 		{"s", prtf_str},
@@ -21,24 +21,24 @@ int locate_option(va_list args, const char *format, int cursor)
 		{"d", prtf_int},
 		{"i", prtf_int},
 	};
-	
+
 	if (!format)
 		return (-1);
-	
+
 	option = format[cursor + 1];
-	
+
 	if (!option)
 		return (-1);
-	
+
 	if (format[cursor] == '%' && option == '\n')
 		return (_putchar('%') + _putchar(option));
-	
+
 	for (i = 0; i < 5; i++)
 	{
 		if (option == settings[i].format[0])
 			return (settings[i].p(args));
-		
+
 	}
-	
+
 	return (_putchar(format[cursor]) + _putchar(option));
 }
