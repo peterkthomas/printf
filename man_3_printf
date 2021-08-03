@@ -1,0 +1,28 @@
+_PRINTF				Linux Programmer's Manual			_PRINTF
+
+NAME
+
+	_printf - print to the standard output
+
+SYNOPSIS
+
+	A custom version of the printf function.
+
+	int _printf(const char *format, ...)
+
+DESCRIPTION
+
+	The _printf() function produces an output according to format. The function prints to stdout, the standard output stream.
+
+RETURN VALUE
+
+	Upon successful return, the function returns the number of characters printed (excluding the null byte). If there is an output error, the value -1 will return.
+
+CONVERSION SPECIFIERS
+
+%d / %i	Signed decimal integer
+%c	Unsigned char
+%s	String
+%	Percentage
+
+Peter Thomas, Robert Scott, Darwin Delgado

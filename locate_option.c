@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * locate_option - find the option and refer to function
+ * locate_option - find the format specifier and invokes the proper function
  * @args: argument to check
  * @format: pointer to position in arguments
  * @cursor: index
