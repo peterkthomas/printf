@@ -35,13 +35,12 @@ int _printf(const char *format, ...)
 		{
 			check = locate_option(args, format, i);
 
-			if (check == -1)
-				return (-1);
-                        else
+			if (check != -1)
 			{
 				write += check;
 				i++;
-			}
+			} else
+				return (-1);
 		}
 		i++;
 	}
