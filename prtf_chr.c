@@ -4,7 +4,7 @@
 *
 * @data: va_list input
 *
-* Return: 0 if successful
+* Return: amount of characters printed
 */
 int prtf_chr(va_list data)
 {
