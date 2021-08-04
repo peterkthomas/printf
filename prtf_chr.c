@@ -8,7 +8,7 @@
 */
 int prtf_chr(va_list data)
 {
-	char c;
+	int c;
 
 	c = va_arg(data, int);
 
