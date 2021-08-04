@@ -23,7 +23,7 @@ int locate_option(va_list args, const char *format, int cursor)
 	};
 	
 	if (!format)
-		return (NULL);
+		return (-1);
 	
 	option = format[cursor + 1];
 	

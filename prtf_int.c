@@ -31,5 +31,5 @@ int prtf_int(va_list data)
 		div = div / 10;
 	}
 	
-	return (write)
+	return (write);
 }

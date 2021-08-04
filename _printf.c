@@ -8,7 +8,7 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i;
+	int i = 0;
 	char character;
 	int write = 0;
 	int check;
