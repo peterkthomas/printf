@@ -10,7 +10,7 @@
 int prtf_int(va_list data)
 {
 	int x;
-	int divisor;
+	int div = 1;
 	int write = 0;
 	
 	x = va_arg(data, int);
