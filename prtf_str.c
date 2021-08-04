@@ -7,29 +7,24 @@
  * Return: number of characters written
  */
 
-int prtf_str(va-list data)
-
-int i;
-int format = 0;
-unsigned int size;
-char str;
-int length = 0;
-int j;
-
-char str = va-arg(data, char*)
-
-for (i = 0; str[i] != '\0'; i++)
+int prtf_str(va_list data)
 {
-    length++;
+
+	char *str;
+	int i;
+	int length = 0;
+
+	str = va_arg(data, char*);
+
+	if (!str)
+		str = "(null)";
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		length += _putchar(str[i]);
+	}
+	
+	va_end(data);
+
+	return(length);
 }
-
-size = length;
-
-for(unsigned int j = 0; j < size; j++)
-{
-    format[j] = str[i];
-
-    _putchar(format[j]);
-}
-
-return(format);
