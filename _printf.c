@@ -10,8 +10,8 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i;
 	char character;
-	int write;
-	int check
+	int write = 0;
+	int check;
 	
 	va_start(args, format);
 	
@@ -49,5 +49,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(args);
 	
-	return (length);
+	return (write);
 }

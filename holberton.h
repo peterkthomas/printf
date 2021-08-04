@@ -14,6 +14,7 @@ struct print_format
 	char *format;
 	int (*p)(va_list data);
 };
+typedef struct print_format pf;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
