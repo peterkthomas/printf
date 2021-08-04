@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <unistd.h>
 #include "holberton.h"
 /**
 * prtf_chr - will print a character
