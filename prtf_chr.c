@@ -9,7 +9,6 @@
 int prtf_chr(va_list data)
 {
 	char c;
-	int f = 0;
 
 	c = va_arg(data, int);
 
