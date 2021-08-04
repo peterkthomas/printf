@@ -12,7 +12,7 @@ int prtf_chr(va_list data)
 
 	c = va_arg(data, int);
 
-	write(1, &c, 1);
+	_putchar(c);
 	return (1);
 
 }
