@@ -1,16 +1,16 @@
 #include "holberton.h"
 
 /**
- *print_int - prints an integer
+ *prtf_int - prints an integer
  *@data: data sent to printf
  *
  *Return: Number of characters printed
  */
 
-int print_int(va_list data)
+int prtf_int(va_list data)
 {
 	int x;
-	int divisor;
+	int div = 1;
 	int write = 0;
 	
 	x = va_arg(data, int);
@@ -31,5 +31,5 @@ int print_int(va_list data)
 		div = div / 10;
 	}
 	
-	return (write)
+	return (write);
 }

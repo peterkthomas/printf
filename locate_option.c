@@ -14,7 +14,7 @@ int locate_option(va_list args, const char *format, int cursor)
 	int i;
 	char option;
 	
-	print_format settings[] = {
+	pf settings[] = {
 		{"%", prtf_pct},
 		{"s", prtf_str},
 		{"c", prtf_chr},
@@ -23,7 +23,7 @@ int locate_option(va_list args, const char *format, int cursor)
 	};
 	
 	if (!format)
-		return (NULL);
+		return (-1);
 	
 	option = format[cursor + 1];
 	
